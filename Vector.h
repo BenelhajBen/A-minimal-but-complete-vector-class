@@ -17,17 +17,17 @@ class Vector
 		void pop(); // remove last element
 
 		T& at(unsigned index) const; // returns the value at the index and does not allow the caller to modify the return value.
-        T& at(unsigned index); // returns the value at the index and allows the caller to modify the return value.
-        T& operator[](unsigned index); // operator overloading for [] operator allows caller to modify value
-        T& operator[](unsigned index) const; // operator overloading for [] operator does not allow the caller to modify the value.
+		T& at(unsigned index); // returns the value at the index and allows the caller to modify the return value.
+		T& operator[](unsigned index); // operator overloading for [] operator allows caller to modify value
+		T& operator[](unsigned index) const; // operator overloading for [] operator does not allow the caller to modify the value.
 
-        T& begin() const; // returns the first element in the vector does not modify it.
-        T& end() const; // returns the last element in the vector does not modify it.
-	
+		T& begin() const; // returns the first element in the vector does not modify it.
+		T& end() const; // returns the last element in the vector does not modify it.
+
 	
 	private:
 		T* vect;
-        void copyVector(const Vector<T>& other); // copy vector
+        	void copyVector(const Vector<T>& other); // copy vector
 		unsigned int capacity; // capacity of vector
 		unsigned int size; // number of elements in the vector
 		bool grow(); // double the capacity of the vector when full
