@@ -4,7 +4,6 @@ A vector class that takes into account a minimal but complete implementation.
 
 List of functionality that can be used:
 
-
 vector[unsigned index]: with exception handling for index out of bounds. allows you to edit data
 at(unsigned index): with exception handling for index out of bounds. allows you to edit data
 push_back: to insert data into your vector.
